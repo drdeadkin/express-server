@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio Website</title>
+		<link rel="stylesheet" href="style2.css" />
+	</head>
+	<body></body>
+</html>
+<body>
+    <div id="header">
+        <div class="container">
+            <%- include('../../partials/header'); %>
+            <div id="wrapper"> 
+                <h1>Contact me</h1> 
+                <form action="mailto:justinilaoo@hotmail.com" ?subject="SignUp" enctype="text/plain" method="post" name="Form">
+                <p>
+                    <label for="name">Name : </label>
+                    <input type="text" name="name" size="40" placeholder="Name" required>
+                </p>
+                <p>
+                    <label for="email">Email : </label>
+                    <input type="email" name="email" size="40" placeholder="Email" required>
+                </p>
+                <p>
+                    <label for="feedback">Comments and Inquires : </label><br>
+                    <textarea name="feedback" cols="60" rows="8"></textarea>
+                </p>
+                <input type="submit" value="Submit"/>
+            </div> 
+            <%- include('../../partials/footer'); %>
+</body>    
+</html>
